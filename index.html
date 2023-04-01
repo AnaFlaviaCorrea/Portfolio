@@ -1,43 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body>
-    <nav>
-        <div class="foto">
-            <img src="Foto.jpeg" alt="" class="ana">
-           
-        </div>
-       <span class="nome"> Ana Flávia Corrêa</span>
-        <div class="itens">
-            <ul>
-                <li> <a href="#Home">Home</a></li>
-                <li> <a href="#About">About</a></li>
-                <li> <a href="#Projects">Projects</a></li>
-                <li> <a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-       
 
-    </nav>
+<body>
+
+    <header>
+        <div class="header-conteudo">
+            <div class="nav-conteudo">
+
+                <div class="nav-logo-texto">
+                    <div class="nav-foto"> <img src="Foto.jpeg" alt="" class="ana"></div>
+                    <span class="nav-nome"> Ana Flávia Corrêa</span>
+                </div>
+            </div>
+
+            <div class="nav-itens-conteudo">
+                <ul class="nav-links">
+                    <li class="link"> <a href="./#Home" class="nav-links">Home</a></li>
+                    <li class="link"> <a href="#About" class="nav-links">About</a></li>
+                    <li class="link"> <a href="#Projects" class="nav-links">Projects</a></li>
+                    <li class="link"> <a href="#Contact" class="nav-links">Contact</a></li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                        alt="hamburger menu" class="header__main-ham-menu">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+                        alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+                </div>
+            </div>
+
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-content">
+                <ul class="header-menu-links">
+                    <li class="header-menu-link"> <a href="./#home"> Home </a> </li>
+
+                    <li class="header-menu-link"> <a href="./#about"> About </a> </li>
+
+                    <li class="header-menu-link"> <a href="./#projects"> Projects </a> </li>
+
+                    <li class="header-menu-link"> <a href="./#contact"> Contact </a> </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
     <section class="descrição">
 
-        <div class="apresentacao">
-            <h1> Hi, I'am Ana Flávia Corrêa</h1>
-            <div class="info">
+        <div class="descricao-conteudo">
+            <h1> Hi, I'm Ana Flávia Corrêa</h1>
+            <div class="descricao-info">
                 <p>Back-End Developer, Java, SpringBoot, MySQL and Math teacher
                 </p>
             </div>
-            <div class="botao">
+            <div class="descricao-botao">
                 <a href="#Projects" class="btn">Projects</a>
             </div>
         </div>
+        <div class="descricao-icons">
+            <i class="fa fa-twitter"><a href="https://twitter.com/Ana_Flavia_F_C"></a></i>
+            <i class="fa fa-linkedin"> <a href="https://www.linkedin.com/in/anaflaviafreitascorrea/"></a></i>
+            <i class="fa fa-github"> <a href="https://github.com/AnaFlaviaCorrea"></a></i>
+
+        </div>
+
     </section>
-    
+    <section id="about" class="about-me">
+        <div class="about-conteudo">
+            <h2>
+                <span class="titulo">
+                    "About me" ::after
+                </span>
+                <span class="texto">
+
+                    Here you will find more information about me, what I do, and my
+                    current skills mostly in terms of programming and technology
+                </span>
+            </h2>
+            <div class="about-me-conteudo">
+                <div class="about-me-conteudo-main">
+                    <h3 class="about-me-titulo">
+                        Get to know me!
+                    </h3>
+                    <div class="about-me-description">
+                        <p class="about-me-description-para"></p>
+                        <p class="about-me-description-para"></p>
+                        <p class="about-me-description-para"></p>
+                    </div>
+                    <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+                </div>
+                <div class="about-me-conteudo-skills">
+                    <h3 class="about-me-titulo"> My Hard Skills</h3>
+                    <div class="skills">
+                        <div class="skills__skill">HTML</div>
+                        <div class="skills__skill">CSS</div>
+                        <div class="skills__skill">JavaScript</div>
+                        <div class="skills__skill">Java</div>
+                        <div class="skills__skill">MySQL</div>
+                        <div class="skills__skill">Math</div>
+                        <div class="skills__skill">Github</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="projects" class="my-projects">
+        <div class="my-projects-conteudo">
+            <h2>
+                <span class="titulo-projects"> "Projects" ::after</span>
+                <span class="texto-projects">
+
+                    Here you will find some of the personal and college projects that I
+                    created with each project containing its own case study
+
+                </span>
+            </h2>
+            <div class="projects-conteudo">
+                <div class="projects-row"></div>
+                <div class="projects-row"></div>
+                <div class="projects-row"></div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-me">
+        <div class="contact-me-conteudo">
+            <h2>
+                <span class="titulo-contact">
+                    "Contact"
+                    ::after
+                </span>
+                <span class="texto-contact">
+
+                    Feel free to Contact me by submitting the form below and I will get
+                    back to you as soon as possible
+
+                </span>
+            </h2>
+            <div class="contact-form-conteudo">
+                <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name"
+                        value="form 1">
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="name">Name</label>
+                        <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input"
+                            name="name" id="name">
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="email">Email</label>
+                        <input required="" placeholder="Enter Your Email" type="email" class="contact__form-input"
+                            name="email" id="email">
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="message">Message</label>
+                        <textarea required="" cols="30" rows="10" class="contact__form-input"
+                            placeholder="Enter Your Message" name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--theme contact__btn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
