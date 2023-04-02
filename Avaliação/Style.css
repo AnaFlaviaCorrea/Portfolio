@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: rgb(214, 211, 211);
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+}
+
+.londres>img {
+    display: flex;
+    position: relative;
+}
+
+.form-busca {
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.nav-voo {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    flex-direction: column;
+
+    background-color: orange;
+
+}
+
+.nav-voo>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.box-flex {
+    display: flex;
+}
+
+.cabecalho {
+
+    margin: 5%;
+    display: flex;
+
+
+}
+
+.btn {
+    margin: 10px;
+    height: 60vh;
+    width: 70vw;
+}
+
+.btn>button {
+    height: 30%;
+    width: 15%;
+    background-color: rgb(179, 173, 173);
+    color: white;
+    border: none;
+}
+
+li>a {
+    color: white;
+}
+
+li>a:hover {
+    background-color: black;
+}
+
+
+header {
+    display: flex;
+}
+
+.input-box {
+    width: 100%;
+    margin: 1% 0;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.input-box>input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input-box>label {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+    margin-left: 10px;
+}
+
+.input-box>input:focus+label,
+.input-box>input:valid+label {
+    top: -10%;
+    left: 0;
+    font-size: 15px;
+}
+
+.principal {
+    height: 100vh;
+    display: grid;
+    position: absolute;
+    grid-template-rows: 267px auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: " Cinque Cinque NY SF" " Cinque Cinque Pisa Paris";
+    gap: 10px;
+    padding: 2%;
+
+}
+
+.texto {
+    padding: 1% 5%;
+    margin-top: 10px;
+}
+
+.texto>h3 {
+    padding: 0%;
+    margin-top: 2%;
+}
+
+.foto1 {
+    grid-area: Cinque;
+    position: relative;
+
+}
+
+.foto2 {
+    grid-area: NY;
+    position: relative;
+
+}
+
+.foto4 {
+    grid-area: SF;
+    position: relative;
+}
+
+.foto3 {
+    grid-area: Pisa;
+}
+
+.foto5 {
+    grid-area: Paris;
+}
+
+.cidade {
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    left: 8%;
+    font-size: 15px;
+
+}
+
+.cidade1,
+.cidade2 {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 10%;
+    font-size: 15px;
+}
+.terre {
+    width: 48vw;
+    height: 85vh;
+}
+
+.cidade3 {
+    position: absolute;
+    color: white;
+    top: 83%;
+    left: 50%;
+    font-size: 15px;
+
+}
+
+.cidade4 {
+    position: absolute;
+    color: white;
+    bottom: 15%;
+    left: 76%;
+    font-size: 15px;
+}
+
+.USA,
+.Italia,
+.S,
+.França {
+    width: 25vw;
+
+}
+
+.principal2 {
+    padding: 2% 3%;
+    height: 100vh;
+    display: grid;
+    position: absolute;
+    grid-template-rows: 267px auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: " Praia Praia Montanha Montanha" " Branco Branco Cinza Cinza";
+    gap: 10px;
+    padding-bottom: 20%;
+}
+
+.texto1 {
+    margin-top: 50%;
+    margin-left: 5%;
+
+}
+
+.Norway {
+    margin-top: 60% 0;
+    grid-area: Praia;
+}
+
+.Austria {
+    margin-top: 65% 0;
+    grid-area: Montanha;
+}
+
+.Norway>img {
+    width: 48vw;
+}
+
+.Austria>img {
+    width: 48vw;
+}
+
+.texto2 {
+    height: 50%;
+    margin: 12% 0;
+    grid-area: Branco;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 1%;
+}
+.texto2 >h3{
+    margin: 1%;
+}
+
+.texto3 {
+    height: 50%;
+    margin: 12% 0;
+    grid-area: Cinza;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 1%;
+}
+.texto3 >h3{
+    margin: 5%;
+}
+
+.subscrive {
+    margin-top: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.subscrive>h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2%;
+}
+
+.botao {
+    height: 45vh;
+}
+
+.botao>button {
+    margin: 1%;
+    height: 10%;
+    width: 15%;
+    background-color: orangered;
+    color: white;
+}
+
+.input-box1 {
+
+    margin: 4% 0;
+    height: 45px;
+    position: relative;
+}
+
+.input-box1>input {
+    width: 100%;
+    height: 80%;
+    border: 2px solid;
+
+}
+
+.input-box1>label {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.input-box1>input:focus+label,
+.input-box1>input:valid+label {
+    top: -10%;
+    left: 0;
+    font-size: 15px;
+}
+
+.contato {
+
+    margin: 5% 2%;
+    height: 5px;
+    padding: 5% 5%;
+    list-style: none;
+}
+
+.contato>h5,
+h2 {
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.icons-contato>i {
+
+    color: black;
+
+}
+
+.input-box2 {
+
+    margin: 4% 0;
+    height: 45px;
+    position: relative;
+}
+
+.input-box2>input {
+    width: 100%;
+    height: 80%;
+    border: 2px solid;
+
+}
+
+.input-box2>label {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.input-box2>input:focus+label,
+.input-box2>input:valid+label {
+    top: -10%;
+    left: 0;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    margin-top: 45%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 45%;
+    font-size: 20px;
+}
+
+.botao1 {
+    height: 45vh;
+}
+
+.botao1>button {
+    height: 15%;
+    width: 15%;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:320px) {}

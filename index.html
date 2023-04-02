@@ -5,31 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
 </head>
 
 <body>
-
-    <header>
+    <header class=" header">
         <div class="header-conteudo">
-            <div class="nav-conteudo">
-
-                <div class="nav-logo-texto">
-                    <div class="nav-foto"> <img src="Foto.jpeg" alt="" class="ana"></div>
-                    <span class="nav-nome"> Ana Flávia Corrêa</span>
+            <div class="header-logo-container">
+                <div class="header-logo-img-cont">
+                    <img src="Foto.jpeg" alt="Ana Logo Image" class="header-logo-img">
                 </div>
+                <span class="header-logo-title">Ana Flávia Corrêa</span>
             </div>
-
-            <div class="nav-itens-conteudo">
-                <ul class="nav-links">
-                    <li class="link"> <a href="./#Home" class="nav-links">Home</a></li>
-                    <li class="link"> <a href="#About" class="nav-links">About</a></li>
-                    <li class="link"> <a href="#Projects" class="nav-links">Projects</a></li>
-                    <li class="link"> <a href="#Contact" class="nav-links">Contact</a></li>
+            <div class="header-menu">
+                <ul class="links">
+                    <li> <a href="./#home" class="links"> Home </a> </li>
+                    <li> <a href="./#about" class="links">About </a> </li>
+                    <li> <a href="./#projects" class="links"> Projects </a></li>
+                    <li> <a href="./#contact" class="links"> Contact </a> </li>
                 </ul>
                 <div class="header__main-ham-menu-cont">
                     <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
@@ -38,118 +35,213 @@
                         alt="hamburger menu close" class="header__main-ham-menu-close d-none">
                 </div>
             </div>
-
         </div>
-        <div class="header-menu">
-            <div class="header-menu-content">
+        <div class="header-second-menu">
+            <div class="header-second-menu-content">
                 <ul class="header-menu-links">
-                    <li class="header-menu-link"> <a href="./#home"> Home </a> </li>
+                    <li class="header-menu-link"><a href="./"> Home </a> </li>
 
                     <li class="header-menu-link"> <a href="./#about"> About </a> </li>
 
-                    <li class="header-menu-link"> <a href="./#projects"> Projects </a> </li>
+                    <li class="header-menu-link"><a href="./#projects"> Projects </a></li>
 
-                    <li class="header-menu-link"> <a href="./#contact"> Contact </a> </li>
+                    <li class="header-menu-link"> <a href="./#contact"> Contact </a></li>
+
                 </ul>
             </div>
         </div>
-
     </header>
-    <section class="descrição">
-
-        <div class="descricao-conteudo">
-            <h1> Hi, I'm Ana Flávia Corrêa</h1>
-            <div class="descricao-info">
-                <p>Back-End Developer, Java, SpringBoot, MySQL and Math teacher
+    <section class="descricao">
+        <div class="descricao__content">
+            <h1 class="heading-primary">Hi, I'm Ana Flávia Corrêa</h1>
+            <div class="descricao__info">
+                <p class="text-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum alias molestiae, ]
+                    assumenda ex quisquam ea id esse officia.
+                    Deserunt impedit facilis voluptatem autem asperiores reiciendis, ducimus nisi ipsum aspernatur.
                 </p>
             </div>
-            <div class="descricao-botao">
-                <a href="#Projects" class="btn">Projects</a>
+            <div class="descricao__contato">
+                <a href="./#projects" class="btn-contato">Projects</a>
             </div>
         </div>
-        <div class="descricao-icons">
-            <i class="fa fa-twitter"><a href="https://twitter.com/Ana_Flavia_F_C"></a></i>
-            <i class="fa fa-linkedin"> <a href="https://www.linkedin.com/in/anaflaviafreitascorrea/"></a></i>
-            <i class="fa fa-github"> <a href="https://github.com/AnaFlaviaCorrea"></a></i>
+        <div class="descricao__socials">
+            <div class="descricao__social">
+                <a href="https://www.linkedin.com/in/anaflaviafreitascorrea/" class="descricao__social-icon-link"
+                    rel="noreferrer" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
+                        alt="Ana Flávia Corrêa Linkedin Profile" class="home-hero__social-icon">
+                </a>
+            </div>
+            <div class="descricao__social">
+                <a href="https://twitter.com/Ana_Flavia_F_C" class="descricao__social-icon-link" rel="noreferrer"
+                    target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
+                        alt="RammCodes Twitter Profile" class="home-hero__social-icon">
+                </a>
+            </div>
+            <!-- <div class="home-hero__social">
+                <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
+                    class="descricao__social-icon-link descricao__social-icon-link--bd-none" rel="noreferrer"
+                    target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/7c95be3350552a5e9f2fc47f1bdbac118ea4dcee/f7a5e/assets/svg/yt-dark.svg"
+                        alt="RammCodes Youtube Channel" class="home-hero__social-icon">
+                </a>
+            </div> -->
+            <div class="descricao__social">
+                <a href="https://github.com/AnaFlaviaCorrea" class="descricao__social-icon-link" rel="noreferrer"
+                    target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
+                        alt="RammCodes Github Profile" class="home-hero__social-icon">
+                </a>
+            </div>
+
 
         </div>
-
+        <div class="descricao__mouse-scroll-contador">
+            <div class="mouse"></div>
+        </div>
     </section>
-    <section id="about" class="about-me">
-        <div class="about-conteudo">
-            <h2>
-                <span class="titulo">
-                    "About me" ::after
-                </span>
-                <span class="texto">
-
+    <section id="about" class="about section"> 
+        <div class="main-section">
+            <h2 class="heading heading-sec heading-sec__mb-med">
+                <span class="heading-sec__main">About Me</span>
+                <span class="heading-sec__sub">
                     Here you will find more information about me, what I do, and my
                     current skills mostly in terms of programming and technology
                 </span>
             </h2>
-            <div class="about-me-conteudo">
-                <div class="about-me-conteudo-main">
-                    <h3 class="about-me-titulo">
-                        Get to know me!
-                    </h3>
-                    <div class="about-me-description">
-                        <p class="about-me-description-para"></p>
-                        <p class="about-me-description-para"></p>
-                        <p class="about-me-description-para"></p>
+            <div class="about__content">
+                <div class="about__content-main">
+                    <h3 class="about__content-title">Get to know me!</h3>
+                    <div class="about__content-details">
+                        <p class="about__content-details-para">
+                            I'm a <strong>Back-End Developer</strong> building the
+                            Back-end of App and Web Applications that leads to the
+                            success of the overall product. Check out some of my work in the
+                            <strong>Projects</strong> section.
+                        </p>
+                        <p class="about__content-details-para">
+                            I also like sharing content related to the stuff that I have
+                            learned over the years in <strong>Web Development</strong> so it
+                            can help other people of the Dev Community. Feel free to Connect
+                            or Follow me on my
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/anaflaviafreitascorrea"
+                                target="_blank">Linkedin</a>
+                            where I post useful content related to Web Development and
+                            Programming
+                        </p>
+                        <p class="about__content-details-para">
+                            I'm open to <strong>Job</strong> opportunities where I can
+                            contribute, learn and grow. If you have a good opportunity that
+                            matches my skills and experience then don't hesitate to
+                            <strong>contact</strong> me.
+                        </p>
                     </div>
                     <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
                 </div>
-                <div class="about-me-conteudo-skills">
-                    <h3 class="about-me-titulo"> My Hard Skills</h3>
+                <div class="about__content-skills">
+                    <h3 class="about__content-title"> My Hard Skills</h3>
                     <div class="skills">
-                        <div class="skills__skill">HTML</div>
-                        <div class="skills__skill">CSS</div>
-                        <div class="skills__skill">JavaScript</div>
-                        <div class="skills__skill">Java</div>
-                        <div class="skills__skill">MySQL</div>
-                        <div class="skills__skill">Math</div>
-                        <div class="skills__skill">Github</div>
+                        <div class="skills-skill">HTML</div>
+                        <div class="skills-skill">CSS</div>
+                        <div class="skills-skill">JavaScript</div>
+                        <div class="skills-skill">Java</div>
+                        <div class="skills-skill">MySQL</div>
+                        <div class="skills-skill">Math</div>
+                        <div class="skills-skill">Github</div>
+                        <div class="skills-skill">Responsive Design</div>
+                        <div class="skills-skill">SpringBoot</div>
+                        <div class="skills-skill">SQL Basics</div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </section>
-    <section id="projects" class="my-projects">
-        <div class="my-projects-conteudo">
-            <h2>
-                <span class="titulo-projects"> "Projects" ::after</span>
-                <span class="texto-projects">
-
+    <section id="projects" class="projects sec-pad">
+        <div class="main-section">
+            <h2 class="heading heading-sec heading-sec__mb-bg">
+                <span class="heading-sec__main">Projects</span>
+                <span class="heading-sec__sub">
                     Here you will find some of the personal and college projects that I
                     created with each project containing its own case study
-
                 </span>
             </h2>
-            <div class="projects-conteudo">
-                <div class="projects-row"></div>
-                <div class="projects-row"></div>
-                <div class="projects-row"></div>
 
+            <div class="projects__content">
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <a href="C:\Users\anafl\Desenvolvimento Web 4 fase\Portfolio\Avaliação\Index.html"></a>
+                        <img src="site.jpg"
+                            alt="Site " class="projects__row-img" loading="lazy">
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">Site de Viagens</h3>
+                        <p class="projects__row-content-desc">
+                            Website created for Web Development class using HTML an CSS. First project with responsiveness
+                            to be acessed by desktop, tablet or cell phone.
+                        </p>
+                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-1" target="_blank">Case Study</a>
+                    </div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                       <img src="site.jpg" alt="" class="projects__row-img" loading="lazy">
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">Biblioteca Senac</h3>
+                        <p class="projects__row-content-desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, molestiae aut tempore rem debitis 
+                            beatae cumque ratione 
+                            esse quo asperiores amet ad, incidunt aliquam excepturi itaque doloremque quos, quod quis.
+                        </p>
+                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-2" target="_blank">Case Study</a>
+                    </div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <img src="site.jpg"
+                            alt="Software Screenshot" class="projects__row-img" loading="lazy">
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">App de Tarefas</h3>
+                        <p class="projects__row-content-desc">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat modi eaque 
+                           blanditiis cum recusandae deleniti quasi 
+                           ducimus maxime ea soluta, temporibus et sequi sint eum. Quod, nemo non. Enim, eius?
+                        </p>
+                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-3" target="_blank">Case Study</a>
+                    </div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <img src="site.jpg"
+                            alt="Software Screenshot" class="projects__row-img" loading="lazy">
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">App de Tarefas</h3>
+                        <p class="projects__row-content-desc">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat modi eaque 
+                           blanditiis cum recusandae deleniti quasi 
+                           ducimus maxime ea soluta, temporibus et sequi sint eum. Quod, nemo non. Enim, eius?
+                        </p>
+                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-3" target="_blank">Case Study</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-    <section id="contact" class="contact-me">
-        <div class="contact-me-conteudo">
-            <h2>
-                <span class="titulo-contact">
-                    "Contact"
-                    ::after
-                </span>
-                <span class="texto-contact">
-
+    <section id="contact" class="contact sec-pad dynamicBg">
+        <div class="main-section">
+            <h2 class="heading heading-sec heading-sec__mb-med">
+                <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+                <span class="heading-sec__sub heading-sec__sub--lt">
                     Feel free to Contact me by submitting the form below and I will get
                     back to you as soon as possible
-
                 </span>
             </h2>
-            <div class="contact-form-conteudo">
+            <div class="contact__form-container">
                 <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name"
                         value="form 1">
                     <div class="contact__form-field">
@@ -174,6 +266,66 @@
             </div>
         </div>
     </section>
+    <footer class="main-footer">
+        <div class="main-section">
+            <div class="main-footer-cima">
+                <div class="main-footer-linha">
+                    <h2 class="heading-main-footer">
+                        <span>Social</span>
+                    </h2>
+                    <div class="main-footer-social-conteudo">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anaflaviafreitascorrea/">
+                            <img class="main-footer-icon"
+                                src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+                                alt="Ana Flávia Corrêa Linkedin Profile">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/AnaFlaviaCorrea">
+                            <img class="main-footer-icon"
+                                src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+                                alt="Ana Flávia Github Profile">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://twitter.com/Ana_Flavia_F_C">
+                            <img class="main-footer-icon"
+                                src="https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png"
+                                alt="Ana Flávia Twitter Profile">
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="main-footer-linha-2">
+                    <h2 class="heading-texto">Ana Flávia Corrêa</h2>
+                    <p class="main-footer__short-desc">
+                        A Backend focused App Developer building the Backtend of Applications
+                        and Web Applications that leads to the success of the overall
+                        product
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="main-footer-abaixo">
+                © Copyright
+                <script>document.write(new Date().getFullYear())</script>2023. Made by
+                <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/anaflaviafreitascorrea/">Ana
+                    Flávia Corrêa</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://d33wubrfki0l68.cloudfront.net/js/96f5c0d4b9bdbf07570efd8e94cb7db7a5191a01/index.js"></script>
+    <script src="//code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js" async=""></script>
+
+
+    <iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;"></iframe>
+    <div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe"
+            style="display: block; border: none; position: fixed; inset: auto 9px 35px auto; width: 270px; height: 94px; opacity: 1; color-scheme: none; background: none transparent !important; margin: 0px; max-height: 100vh; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important; border-radius: 47px 30px 47px 47px;"></iframe>
+    </div>
+</body>, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
 
 </body>
 
