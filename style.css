@@ -1,4 +1,6 @@
-*,::after,::before {
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -12,19 +14,19 @@ html {
 
 @media only screen and (max-width: 75em) {
     html {
-        font-size:59%
+        font-size: 59%
     }
 }
 
 @media only screen and (max-width: 56.25em) {
     html {
-        font-size:56%
+        font-size: 56%
     }
 }
 
 @media only screen and (min-width: 112.5em) {
     html {
-        font-size:65%
+        font-size: 65%
     }
 }
 
@@ -35,7 +37,7 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'Source Sans Pro',sans-serif
+    font-family: 'Source Sans Pro', sans-serif
 }
 
 a {
@@ -47,7 +49,10 @@ li {
     list-style: none
 }
 
-a:focus,button:focus,input:focus,textarea:focus {
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
     outline: 0
 }
 
@@ -71,7 +76,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .heading-primary {
-        font-size:4.5rem
+        font-size: 4.5rem
     }
 }
 
@@ -81,7 +86,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .heading-sec__mb-bg {
-        margin-bottom:8rem
+        margin-bottom: 8rem
     }
 }
 
@@ -91,7 +96,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .heading-sec__mb-med {
-        margin-bottom:8rem
+        margin-bottom: 8rem
     }
 }
 
@@ -131,7 +136,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .heading-sec__main::after {
-        top:calc(100% + 1.2rem)
+        top: calc(100% + 1.2rem)
     }
 }
 
@@ -148,7 +153,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .heading-sec__sub {
-        font-size:1.8rem
+        font-size: 1.8rem
     }
 }
 
@@ -176,7 +181,7 @@ textarea {
     display: inline-block;
     font-weight: 700;
     border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
     transition: transform .3s
 }
 
@@ -213,7 +218,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .sec-pad {
-        padding:8rem 0
+        padding: 8rem 0
     }
 }
 
@@ -227,7 +232,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .text-primary {
-        font-size:2rem
+        font-size: 2rem
     }
 }
 
@@ -237,7 +242,7 @@ textarea {
 
 .descricao {
     color: #fff;
-    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8));
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8));
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -247,7 +252,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .descricao {
-        height:unset;
+        height: unset;
         min-height: unset
     }
 }
@@ -257,13 +262,13 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     background: #fff;
-    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
     padding: .5rem
 }
 
 @media only screen and (max-width: 56.25em) {
     .descricao__socials {
-        display:none
+        display: none
     }
 }
 
@@ -276,7 +281,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .descricao__mouse-scroll-contador {
-        display:none
+        display: none
     }
 }
 
@@ -293,14 +298,14 @@ textarea {
 }
 
 .descricao__social-icon-link:hover {
-    background: rgba(250,207,15,.2)
+    background: rgba(250, 207, 15, .2)
 }
 
-.home-hero__social-icon-link--bd-none {
+/* .home-hero__social-icon-link--bd-none {
     border-bottom: 0
-}
+} */
 
-.home-hero__social-icon {
+.descricao__social-icon {
     width: 100%
 }
 
@@ -308,17 +313,17 @@ textarea {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     max-width: 90rem;
     width: 92%
 }
 
 @media only screen and (max-width: 37.5em) {
     .descricao__content {
-        padding:19rem 0 13rem 0;
+        padding: 19rem 0 13rem 0;
         margin: auto;
         position: static;
-        transform: translate(0,0)
+        transform: translate(0, 0)
     }
 }
 
@@ -344,7 +349,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .about__content {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 8rem
     }
 }
@@ -357,7 +362,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .about__content-title {
-        font-size:2.4rem
+        font-size: 2.4rem
     }
 }
 
@@ -385,7 +390,7 @@ textarea {
     margin: 0 3px
 }
 
-.projects__row {
+.projects-column {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 5rem;
@@ -393,35 +398,35 @@ textarea {
 }
 
 @media only screen and (max-width: 56.25em) {
-    .projects__row {
-        grid-template-columns:1fr;
+    .projects-column {
+        grid-template-columns: 1fr;
         grid-gap: 2rem;
         margin-bottom: 8rem
     }
 }
 
 @media only screen and (max-width: 56.25em) {
-    .projects__row {
-        text-align:center
+    .projects-column {
+        text-align: center
     }
 }
 
-.projects__row:last-child {
+.projects-column:last-child {
     margin-bottom: 0
 }
 
-.projects__row-img-cont {
+.projects-column-img-cont {
     overflow: hidden
 }
 
-.projects__row-img {
+.projects-column-img {
     width: 100%;
     display: block;
     -o-object-fit: cover;
     object-fit: cover
 }
 
-.projects__row-content {
+.projects-column-content {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
@@ -430,24 +435,24 @@ textarea {
 }
 
 @media only screen and (max-width: 56.25em) {
-    .projects__row-content {
-        align-items:center
+    .projects-column-content {
+        align-items: center
     }
 }
 
-.projects__row-content-title {
+.projects-column-content-title {
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 2rem
 }
 
 @media only screen and (max-width: 37.5em) {
-    .projects__row-content-title {
-        font-size:2.4rem
+    .projects-column-content-title {
+        font-size: 2.4rem
     }
 }
 
-.projects__row-content-desc {
+.projects-column-content-desc {
     font-size: 1.8rem;
     color: #666;
     max-width: 60rem;
@@ -456,19 +461,19 @@ textarea {
 }
 
 @media only screen and (max-width: 37.5em) {
-    .projects__row-content-desc {
-        font-size:1.7rem
+    .projects-column-content-desc {
+        font-size: 1.7rem
     }
 }
 
 .contact {
-    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center
 }
 
 .contact__form-container {
-    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
     background: #fff;
     padding: 4rem;
     margin-top: 6rem;
@@ -481,7 +486,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .contact__form-container {
-        padding:3rem
+        padding: 3rem
     }
 }
 
@@ -491,7 +496,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .contact__form-field {
-        margin-bottom:3rem
+        margin-bottom: 3rem
     }
 }
 
@@ -575,13 +580,13 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .contact__btn {
-        width:100%
+        width: 100%
     }
 }
 
 .project-cs-hero {
     color: #fff;
-    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center;
     position: relative
@@ -589,7 +594,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .project-cs-hero {
-        height:unset;
+        height: unset;
         min-height: unset
     }
 }
@@ -603,10 +608,10 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .project-cs-hero__content {
-        padding:19rem 0 13rem 0;
+        padding: 19rem 0 13rem 0;
         margin: auto;
         position: static;
-        transform: translate(0,0)
+        transform: translate(0, 0)
     }
 }
 
@@ -634,7 +639,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .project-details__content-title {
-        font-size:2.4rem
+        font-size: 2.4rem
     }
 }
 
@@ -678,7 +683,7 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgba(153,153,153,.2);
+    background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
     color: #777
@@ -694,7 +699,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .project-details__links-btn {
-        margin-right:0;
+        margin-right: 0;
         width: 70%;
         margin-bottom: 2rem;
         text-align: center
@@ -707,7 +712,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .project-details__links-btn:last-child {
-        margin:0
+        margin: 0
     }
 }
 
@@ -717,7 +722,7 @@ textarea {
     z-index: 1000;
     background: #000;
     background: #fff;
-    box-shadow: 0 10px 100px rgba(0,0,0,.1)
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .1)
 }
 
 .header-conteudo {
@@ -729,7 +734,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .header-conteudo {
-        padding:0 2rem
+        padding: 0 2rem
     }
 }
 
@@ -756,7 +761,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .header-logo-img-cont {
-        width:4.5rem;
+        width: 4.5rem;
         height: 4.5rem;
         margin-right: 1.2rem
     }
@@ -779,17 +784,17 @@ textarea {
     letter-spacing: 1px
 }
 
-.links {
+.header-links {
     display: flex
 }
 
 @media only screen and (max-width: 37.5em) {
-    .links {
-        display:none
+    .header-links {
+        display: none
     }
 }
 
-.header__link {
+.links {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
@@ -797,16 +802,24 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    transition: color .3s
-}
-
-.header__link:hover {
-    color: #fa590f
+    transition: color .3s;
 }
 
 @media only screen and (max-width: 56.25em) {
     .header__link {
-        padding:3rem 1.8rem;
+        padding: 3rem 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+.header-menu:hover {
+    color: #fa590f
+}
+
+@media only screen and (max-width: 56.25em) {
+    .header-menu {
+        padding: 3rem 1.8rem;
         font-size: 1.5rem
     }
 }
@@ -819,7 +832,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .header__main-ham-menu-cont {
-        display:block
+        display: block
     }
 }
 
@@ -839,9 +852,9 @@ textarea {
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
-    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
-    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1)
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1)
 }
 
 .header__sm-menu--active {
@@ -851,12 +864,12 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
     .header__sm-menu--active {
-        visibility:visible;
+        visibility: visible;
         opacity: 1
     }
 }
 
-.header-menu-link > a {
+.header-menu-link>a {
     display: block;
     text-decoration: none;
     padding: 2.5rem 3rem;
@@ -870,11 +883,11 @@ textarea {
     transition: color .3s
 }
 
-.header-menu-link > a:hover {
+.header-menu-link>a:hover {
     color: #fa590f
 }
 
-.header-menu-link:first-child> a {
+.header-menu-link:first-child>a {
     border-top: 1px solid #eee
 }
 
@@ -895,13 +908,13 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .main-footer-cima {
-        padding:6rem 0
+        padding: 6rem 0
     }
 }
 
 @media only screen and (max-width: 37.5em) {
     .main-footer-cima {
-        display:block
+        display: block
     }
 }
 
@@ -911,7 +924,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .main-footer-linha {
-        margin-bottom:5rem
+        margin-bottom: 5rem
     }
 }
 
@@ -923,7 +936,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .main-footer-linha-2 {
-        width:100%
+        width: 100%
     }
 }
 
@@ -956,7 +969,7 @@ textarea {
     text-align: center
 }
 
-.main-footer-abaixo> a {
+.main-footer-abaixo>a {
     text-decoration: underline;
     font-weight: 700;
     margin-left: 2px
@@ -964,7 +977,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
     .main-footer-abaixo {
-        padding:3.5rem 0
+        padding: 3.5rem 0
     }
 }
 
@@ -978,7 +991,7 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgba(153,153,153,.2);
+    background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
     color: #666
